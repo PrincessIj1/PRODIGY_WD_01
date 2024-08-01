@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="Weather App.css">
+</head>
+<body>
+  <div class="headercontainer">
+    <header>
+      <h1>Weather Dashboard</h1>
+      <p style="font-size: smaller; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-style: italic; font-weight: bold">Get the latest weather updates for any location!</p>
+    </header>
+    <main>
+      <div class="searchcontainer">
+        <input type="text" id="locationinput" placeholder="Enter city or country" style="font-style: italic;">
+        <button id="searchbutton">Search</button>
+      </div>
+    </main>
+    <div id="weatherdetailspage" class="weatherdetailspage hide">
+      <button id="backbutton">Back</button>
+      <div id="weatherinfo" class="weatherinfo">
+      </div>
+    </div>
+    <footer style="margin-top: 550px;">
+      <p>&copy; 2024 Weather Dashboard. All rights reserved.</p>
+    </footer>
+  </div>
+  
+  <script src="Weather App.js"></script>
+</body>
+</html>

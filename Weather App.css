@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  font-family: serif;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  background-image: url(./Sky5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+  transition: 1s;
+  animation: forwards;
+  color: #fff;
+  max-height: 100vh;
+}
+
+.headercontainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  height: 100vh;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #f1f1f1;
+}
+
+.searchcontainer {
+  margin-bottom: 30px;
+}
+
+#locationinput {
+  padding: 10px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  width: 70%;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: black;
+}
+
+#searchbutton {
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  background-color: #0072ff;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+#searchbutton:hover {
+  background-color: #005bb5;
+}
+
+.weatherinfo {
+  background: linear-gradient(to right, aquamarine, blue);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  max-width: 600px;
+  color: black;
+}
+
+.weatherinfo h2 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.weatherinfo p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.weatherdetailspage {
+  display: none;
+  padding: 20px;
+  text-align: center;
+  height: 0vh;
+}
+
+.weatherdetailspage.hide {
+  display: none;
+}
+
+.weatherdetailspage.show {
+  display: block;
+}
+
+#backbutton {
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  background-color: #0072ff;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+#backbutton:hover {
+  background-color: #005bb5;
+}
+
+footer {
+  margin-top: 200px;
+  font-size: 0.9em;
+  color: #f1f1f1;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  #locationinput, #searchbutton {
+    width: 90%;
+    display: block;
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  .weatherinfo h2 {
+    font-size: 1.5em;
+  }
+
+  .weatherinfo p {
+    font-size: 1em;
+  }
+
+  footer {
+    margin-top: 1000px;
+  }
+}
